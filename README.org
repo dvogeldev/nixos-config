@@ -1,0 +1,8 @@
+#+TITLE: Readme
+* nixos-config
+This is my current setup for NixOS configuration files, home-manager, emacs, etc.
+** Structure
+#+begin_src sh :results output :exports results
+tree .
+
+#+end_src 
