@@ -32,8 +32,5 @@ nix-channel --update
 # Install
 nixos-install
 
-# Install home-manager-template for user
-git clone https://github.com/dvogeldev/home-manager-template /mnt/home/david/.config/home
-
 # Finish
 echo -e "\e[32mAll OK"
