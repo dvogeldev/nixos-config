@@ -9,7 +9,7 @@ print () {
 # Initialize Nixos configuration
 #nixos-generate-config --root /mnt
 rm -Rf /mnt/etc/nixos 2>/dev/null
-git clone https://github.com/dvogeldev/nix-config /mnt/etc/nixos
+git clone https://github.com/dvogeldev/nixos-config /mnt/etc/nixos
 
 # Select host configuration
 print "Select host to setup :"
