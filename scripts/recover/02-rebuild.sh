@@ -14,7 +14,6 @@ git pull
 # Rebuild nix-config
 print "Rebuild nix-config"
 nix-channel --add https://nixos.org/channels/nixos-unstable nixos
-nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
 nix-channel --update
 nixos-install
 
