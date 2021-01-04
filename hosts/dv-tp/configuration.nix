@@ -8,7 +8,6 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      <home-manager/nixos>
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -57,7 +56,7 @@
   # services.xserver.enable = true;
   # services.xserver.displayManager.sddm.enable = true;
   # services.xserver.desktopManager.plasma5.enable = true;
-  
+
   # XFCE
   services.xserver = {
     enable = true;
@@ -154,4 +153,3 @@
   system.stateVersion = "20.09"; # Did you read the comment?
 
 }
-
