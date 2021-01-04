@@ -27,11 +27,13 @@ done
 
 # Set unstable channel
 nix-channel --add https://nixos.org/channels/nixos-unstable nixos
-nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
 nix-channel --update
 
 # Install
 nixos-install
+
+# Install home-manager-template for user
+git clone https://github.com/dvogeldev/home-manager-template /mnt/home/david/.config/home
 
 # Finish
 echo -e "\e[32mAll OK"
