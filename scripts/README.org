@@ -1,11 +1,10 @@
-#+TITLE: Script
+#+TITLE: Scripts
 #+AUTHOR: David Vogel
 #+DESCRIPTION: Install & Recovery scripts
 #+STARTUP: showeverything
 
-* Scripts
-** Installation
-*** 01-configure.sh
+* Installation
+** 01-configure.sh
 This script allows you to choose the installation drive for NixOS from a list of available drives on your system. This will be a zfs encrypted filesystem with a swap volume. The script will partition and mount the drive with the following structure:
 - Encrypted zpool
 - Directories
@@ -16,14 +15,14 @@ This script allows you to choose the installation drive for NixOS from a list of
 
 Once this is complete, you will run the installation script for your chosen host (machine)
 
-*** 02-install.sh
+** 02-install.sh
 This script will clone your existing repo with your configs and dotfiles using the unstable nix channel.
-** Recover
-*** 01-mount.sh
+* Recover
+** 01-mount.sh
 This script mounts imports the zfs pool, ZROOT, mounting the zfs datasets:
 - mnt
 - home
 - var
 Along with the swap zvol. And finishes by mounting the BOOT partition.
-*** 02-rebuild.sh
+** 02-rebuild.sh
 First we pull from the repo for the latest updates. Add and update the nix channel (nixos-unstable) Finally, installing the system with the nixos-install command.
