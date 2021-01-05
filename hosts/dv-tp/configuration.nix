@@ -74,11 +74,16 @@
   };
 
   # Enable CUPS to print documents.
-  # services.printing.enable = true;
+  services.printing.enable = true;
 
   # Enable sound.
-  # sound.enable = true;
+  sound = {
+    enable = true;
+    mediaKeys.enable = true;
+  };
   hardware.pulseaudio.enable = true;
+
+  # Hardware optimizations
   hardware.cpu.intel.updateMicrocode = true;
   hardware.enableAllFirmware = true;
 
@@ -111,12 +116,13 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    wget
-    neovim
-    brave
-    tldr
-    gitAndTools.gitFull
     alacritty
+    brave
+    gitAndTools.gitFull
+    hplip
+    neovim
+    tldr
+    wget
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -126,6 +132,9 @@
     enable = true;
     enableSSHSupport = true;
   };
+
+  # Add fish
+  programs.fish.enable = true;
 
   # List services that you want to enable:
 
