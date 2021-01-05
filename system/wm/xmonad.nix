@@ -23,8 +23,6 @@
       videoDrivers = [ "modesetting" ];
       useGlamor = true;
 
-      };
-
       serverLayoutSection = ''
         Option "StandbyTime" "0"
         Option "SuspendTime" "0"
