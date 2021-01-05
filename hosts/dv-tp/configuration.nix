@@ -8,8 +8,8 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./system/wm/xmonad.nix
-      ./system/fonts
+      ../../system/wm/xmonad.nix
+      ../../system/fonts
     ];
 
   # Use the systemd-boot EFI boot loader.
