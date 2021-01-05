@@ -42,7 +42,6 @@
 
       xkbOptions = "ctrl:nocaps";
     };
-  };
 
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
