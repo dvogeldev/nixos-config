@@ -8,6 +8,8 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./system/wm/xmonad.nix
+      ./system/fonts
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -58,15 +60,15 @@
   # services.xserver.desktopManager.plasma5.enable = true;
 
   # XFCE
-  services.xserver = {
-    enable = true;
-    layout = "us";
-    xkbOptions = "ctrl:nocaps";
-    videoDrivers = [ "modesetting" ];
-    useGlamor = true;
-    desktopManager.xfce.enable = true;
-    displayManager.defaultSession = "xfce";
-  };
+#  services.xserver = {
+#    enable = true;
+#    layout = "us";
+#    xkbOptions = "ctrl:nocaps";
+#    videoDrivers = [ "modesetting" ];
+#    useGlamor = true;
+#    desktopManager.xfce.enable = true;
+#    displayManager.defaultSession = "xfce";
+#  };
 
   environment.variables = {
     EDITOR = "nvim";
