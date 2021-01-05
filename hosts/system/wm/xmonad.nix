@@ -18,6 +18,10 @@
       libinput = {
         enable = true;
         disableWhileTyping = true;
+
+      videoDrivers = [ "modesetting" ];
+      useGlamor = true;
+
       };
 
       serverLayoutSection = ''
