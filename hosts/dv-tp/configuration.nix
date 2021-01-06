@@ -8,7 +8,6 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ../../system/wm/xmonad.nix
       ../../system/fonts
     ];
 
@@ -60,15 +59,15 @@
   # services.xserver.desktopManager.plasma5.enable = true;
 
   # XFCE
-#  services.xserver = {
-#    enable = true;
-#    layout = "us";
-#    xkbOptions = "ctrl:nocaps";
-#    videoDrivers = [ "modesetting" ];
-#    useGlamor = true;
-#    desktopManager.xfce.enable = true;
-#    displayManager.defaultSession = "xfce";
-#  };
+  services.xserver = {
+    enable = true;
+    layout = "us";
+    xkbOptions = "ctrl:nocaps";
+    videoDrivers = [ "modesetting" ];
+    useGlamor = true;
+    desktopManager.xfce.enable = true;
+    displayManager.defaultSession = "xfce";
+  };
 
   environment.variables = {
     EDITOR = "nvim";
@@ -97,20 +96,20 @@
     initialPassword = "pass";
     uid = 1000;
     isNormalUser = true;
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "NetworkManager" ]; # Enable ‘sudo’ for the user.
     shell = pkgs.fish;
   };
 
   # Security
   # Use doas instead of sudo
-  security.sudo.enable = false;
-  security.doas = {
-    enable = true;
-    wheelNeedsPassword = true;
-    extraRules = [
-      { groups = [ "wheel" ]; noPass = false; keepEnv = true; persist = true;}
-    ];
-  };
+#  security.sudo.enable = false;
+#  security.doas = {
+#    enable = true;
+#    wheelNeedsPassword = true;
+#    extraRules = [
+#      { groups = [ "wheel" ]; noPass = false; keepEnv = true; persist = true;}
+#    ];
+#  };
    nix.allowedUsers = [ "@wheel" "david" ];
 
 
