@@ -3,4 +3,4 @@
 	url = https://github.com/dvogeldev/home-manager-template.git
 [submodule "home"]
 	path = home
-	url = https://github.com/dvogeldev/home-manager-template
+	url = https://github.com/ryantm/home-manager-template
