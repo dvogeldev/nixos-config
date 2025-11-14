@@ -1,5 +1,5 @@
 {
-  description = "Joshua Blais' NixOS Infrastructure";
+  description = "David Vogel' NixOS Infrastructure";
 
   inputs = {
     # Core
@@ -15,7 +15,7 @@
     impermanence.url = "github:nix-community/impermanence";
 
     # Custom modules
-    supernote-tools.url = "github:jblais493/supernote";
+    # supernote-tools.url = "github:jblais493/supernote";
 
     # Styling
     stylix.url = "github:danth/stylix";
@@ -25,7 +25,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     deploy-rs.inputs.nixpkgs.follows = "nixpkgs";
     agenix.inputs.nixpkgs.follows = "nixpkgs";
-    supernote-tools.inputs.nixpkgs.follows = "nixpkgs";
+    # supernote-tools.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs =
@@ -40,12 +40,12 @@
 
       # Desktop machines get base + GUI tools
       desktop = base ++ [
-        inputs.supernote-tools.nixosModules.default
+        # inputs.supernote-tools.nixosModules.default
         inputs.home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.joshua = import ./modules/home-manager;
+          home-manager.users.david = import ./modules/home-manager;
           home-manager.extraSpecialArgs = { inherit inputs; };
           home-manager.backupFileExtension = "backup";
         }
@@ -75,21 +75,22 @@
       # System configurations
       nixosConfigurations = {
         # Personal machines (desktop environment)
-        theologica = mkHost "theologica" desktop;
-        king = mkHost "king" desktop;
-        axios = mkHost "axios" desktop;
+        # theologica = mkHost "theologica" desktop;
+        # king = mkHost "king" desktop;
+        dvpc = mkHost "dvpc" desktop;
+        # axios = mkHost "axios" desktop;
 
         # Server infrastructure (headless)
-        empirica = mkHost "empirica" base;
+        # empirica = mkHost "empirica" base;
       };
 
       # Remote deployment targets
-      deploy.nodes = {
-        empirica = mkDeploy "empirica" {
-          sshUser = "joshua";
-          hostname = "192.168.0.28";
-        };
-      };
+      # deploy.nodes = {
+      #   empirica = mkDeploy "empirica" {
+      #     sshUser = "joshua";
+      #     hostname = "192.168.0.28";
+      #   };
+      # };
 
       # Deployment validation checks
       checks = builtins.mapAttrs (_: deployLib: deployLib.deployChecks self.deploy) inputs.deploy-rs.lib;
