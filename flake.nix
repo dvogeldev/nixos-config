@@ -1,5 +1,5 @@
 {
-  description = "David Vogel' NixOS Infrastructure";
+  description = "David Vogel's NixOS Infrastructure.";
 
   inputs = {
     # Core
