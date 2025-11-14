@@ -57,7 +57,7 @@
 
   users.groups.joshua = { };
 
-  time.timeZone = "America/Edmonton";
+  time.timeZone = "America/Detroit";
 
   system.stateVersion = "25.05";
 }
