@@ -1,13 +1,11 @@
 let
   # Your personal age key (from ~/.config/age/keys.txt
-  joshua = "age1k0sc4ugaxzpav2rs8cmugwthaa3tpuzygvax8u84m6sm9ldh737qspv058";
+  # TODO joshua = "age1k0sc4ugaxzpav2rs8cmugwthaa3tpuzygvax8u84m6sm9ldh737qspv058";
 
   # Machine age keys
-  empirica = "age1gt2m3dtrkx3lwnddwv62fesadyd5pkmadtwtdfwvcs4lhcyqt33qfq386s";
 
   # Groups for convenience
-  users = [ joshua ];
-  servers = [ empirica ];
+  users = [ david ];
   allSystems = users ++ servers;
 in
 {

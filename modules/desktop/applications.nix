@@ -39,7 +39,7 @@
 
   # Android tooling
   programs.adb.enable = true;
-  users.users.joshua.extraGroups = [ "adbusers" ];
+  users.users.david.extraGroups = [ "adbusers" ];
 
   services.resolved.enable = true;
   services.mullvad-vpn.enable = true;

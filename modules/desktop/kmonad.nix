@@ -13,5 +13,5 @@
   '';
 
   # Add your user to the input group
-  users.users.joshua.extraGroups = [ "input" ];
+  users.users.david.extraGroups = [ "input" ];
 }
