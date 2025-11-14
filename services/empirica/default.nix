@@ -34,7 +34,7 @@ in
 
     timezone = mkOption {
       type = types.str;
-      default = "America/Edmonton";
+      default = "America/Detroit";
       description = "Timezone for services";
     };
   };

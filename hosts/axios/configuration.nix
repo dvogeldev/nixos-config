@@ -69,7 +69,7 @@ users.users.joshua = {
     compsize
   ];
 
-  time.timeZone = "America/Edmonton";
+  time.timeZone = "America/Detroit";
   i18n.defaultLocale = "en_CA.UTF-8";
 
   system.stateVersion = "25.05";

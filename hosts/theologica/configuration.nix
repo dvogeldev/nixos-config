@@ -34,7 +34,7 @@
   users.groups.joshua = { };
 
   # Basic system configuration
-  time.timeZone = "America/Edmonton";
+  time.timeZone = "America/Detroit";
   i18n.defaultLocale = "en_CA.UTF-8";
 
   # Enable Supernote sync tool

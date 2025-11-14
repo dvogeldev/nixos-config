@@ -9,7 +9,7 @@
         org-caldav-sync-direction 'twoway
         org-caldav-delete-org-entries 'ask
         org-caldav-delete-calendar-entries 'ask
-        org-icalendar-timezone "America/Edmonton"
+        org-icalendar-timezone "America/Detroit"
         ;; CRITICAL: Allow broken links during icalendar export
         org-icalendar-include-todo nil
         org-export-with-broken-links t)  ; Global override
