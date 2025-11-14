@@ -19,8 +19,8 @@
     ./xdg.nix
   ];
 
-  home.username = "joshua";
-  home.homeDirectory = "/home/joshua";
+  home.username = "david";
+  home.homeDirectory = "/home/david";
   home.stateVersion = "25.05";
 
   # Let home-manager manage itself
