@@ -81,9 +81,9 @@
   # Syncthing for laptop to phone synchronization
   services.syncthing = {
     enable = true;
-    user = "joshua";
-    dataDir = "/home/joshua/.syncthing";
-    configDir = "/home/joshua/.config/syncthing";
+    user = "david";
+    dataDir = "/home/david/.syncthing";
+    configDir = "/home/david/.config/syncthing";
     # Can declaratively set this later:
     # overrideDevices = true;
     # overrideFolders = true;

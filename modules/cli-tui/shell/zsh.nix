@@ -25,7 +25,7 @@
   };
 
   # Set zsh as default shell for user
-  users.users.joshua.shell = pkgs.zsh;
+  users.users.david.shell = pkgs.zsh;
 
   # Install additional tools
   environment.systemPackages = with pkgs; [

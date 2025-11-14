@@ -5,9 +5,9 @@
     config = {
       init.defaultBranch = "main";
       user = {
-        name = "Joshua Blais";
-        email = "josh@joshblais.com";
-        signingkey = "289A94348DB64DFC";
+        name = "David Vogel";
+        email = "dvogelca@proton.me";
+        signingkey = "";
       };
       commit.gpgsign = true;
       tag.gpgsign = true;
@@ -49,12 +49,11 @@
       mf-push = "!git remote | grep -E '(origin|github|codeberg|forgejo)' | xargs -I {} git push {} $(git rev-parse --abbrev-ref HEAD)";
 
       # Setup all remotes
-      mf-init = "!f() { REPO=$1; git remote add github git@github.com:jblais493/$REPO.git; git remote add codeberg git@codeberg.org:joshuablais/$REPO.git; git remote add forgejo git@forge.labrynth.org:josh/$REPO.git; echo 'Multi-forge remotes configured'; git remote -v; }; f";
+      mf-init = "!f() { REPO=$1; git remote add github git@github.com:dvogeldev/$REPO.git; git remote add codeberg git@codeberg.org:joshuablais/$REPO.git; git remote add forgejo git@forge.labrynth.org:josh/$REPO.git; echo 'Multi-forge remotes configured'; git remote -v; }; f";
 
       # Individual remote additions
-      add-github = "!f() { git remote add github git@github.com:jblais493/$1.git; }; f";
-      add-codeberg = "!f() { git remote add codeberg git@codeberg.org:joshuablais/$1.git; }; f";
-      add-forgejo = "!f() { git remote add forgejo git@forge.labrynth.org:josh/$1.git; }; f";
+      add-github = "!f() { git remote add github git@github.com:dvogeldev/$1.git; }; f";
+      add-codeberg = "!f() { git remote add codeberg git@codeberg.org:dvogeldev/$1.git; }; f";
 
       # Convenience
       st = "status -sb";

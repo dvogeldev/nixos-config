@@ -11,25 +11,25 @@
      "7ea883b13485f175d3075c72fceab701b5bf76b2076f024da50dff4107d0db25" default))
  '(magit-todos-insert-after '(bottom) nil nil "Changed by setter of obsolete option `magit-todos-insert-at'")
  '(org-agenda-files
-   '("~/Projects/Writing/README.org" "/home/joshua/Projects/Personal/README.org"
-     "/home/joshua/Projects/Ace the OSCE/README.org"
-     "/home/joshua/Development/infra/README.org" "/home/joshua/org/done.org"
-     "/home/joshua/Projects/Holdsworth Design/StJosephs/README.org"
-     "/home/joshua/Development/edifice/README.org"
-     "/home/joshua/Development/go-backup/README.org"
-     "/home/joshua/org/caldav-inbox.org"
-     "/home/joshua/Development/luminaforge/README.org"
-     "/home/joshua/Projects/MaisonOS/README.org"
-     "/home/joshua/nixos-config/dotfiles/doom/README.org"
-     "/home/joshua/Projects/Homeserver/README.org"
-     "/home/joshua/Projects/Holdsworth Design/README.org"
-     "/home/joshua/org/personal.org"
-     "/home/joshua/Projects/Revere Imaginative/README.org"
-     "/home/joshua/Development/edifice/todo.org"
-     "/home/joshua/Projects/Youtube/README.org"
-     "/home/joshua/org/roam/personal/Fashion/wardrobe.org"
-     "/home/joshua/org/inbox.org" "/home/joshua/org/contacts.org"
-     "/home/joshua/org/calendar.org"))
+   '("~/Projects/Writing/README.org" "/home/david/.org"
+     "/home/david/Projects/Ace the OSCE/README.org"
+     "/home/david/Development/infra/README.org" "/home/joshua/org/done.org"
+     "/home/david/Projects/Holdsworth Design/StJosephs/README.org"
+     "/home/david/Development/edifice/README.org"
+     "/home/david/Development/go-backup/README.org"
+     "/home/david/org/caldav-inbox.org"
+     "/home/david/Development/luminaforge/README.org"
+     "/home/david/Projects/MaisonOS/README.org"
+     "/home/david/nixos-config/dotfiles/doom/README.org"
+     "/home/david/Projects/Homeserver/README.org"
+     "/home/david/Projects/Holdsworth Design/README.org"
+     "/home/david/org/personal.org"
+     "/home/david/Projects/Revere Imaginative/README.org"
+     "/home/david/Development/edifice/todo.org"
+     "/home/david/Projects/Youtube/README.org"
+     "/home/david/org/roam/personal/Fashion/wardrobe.org"
+     "/home/david/org/inbox.org" "/home/joshua/org/contacts.org"
+     "/home/david/org/calendar.org"))
  '(pomodoro-break-minutes 5)
  '(pomodoro-work-minutes 25)
  '(send-mail-function 'smtpmail-send-it)

@@ -8,7 +8,7 @@
     ];
     trusted-users = [
       "root"
-      "joshua"
+      "david"
     ];
 
     # Store optimization

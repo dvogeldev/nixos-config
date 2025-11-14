@@ -11,7 +11,7 @@
 
     # Allow SSH agent forwarding for your user
     extraConfig = ''
-      Match User joshua
+      Match User david
         AllowAgentForwarding yes
     '';
   };
