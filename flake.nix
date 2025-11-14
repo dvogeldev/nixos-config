@@ -80,6 +80,13 @@
         # empirica = mkHost "empirica" base;
       };
 
+      # Deployment definitions for deploy-rs
+      deploy.nodes = {
+        dvpc = mkDeploy "dvpc" {
+          hostname = "dvpc";
+        };
+      };
+
       # Deployment validation checks
       checks = builtins.mapAttrs (_: deployLib: deployLib.deployChecks self.deploy) inputs.deploy-rs.lib;
     };
