@@ -43,7 +43,7 @@
         # inputs.supernote-tools.nixosModules.default
         inputs.home-manager.nixosModules.home-manager
         {
-          home-manager.useGlobalPkgs = true;
+          home-manager.useGlobalPkgs = false;
           home-manager.useUserPackages = true;
           home-manager.users.david = import ./modules/home-manager;
           home-manager.extraSpecialArgs = { inherit inputs; };

@@ -23,6 +23,13 @@
   home.homeDirectory = "/home/david";
   home.stateVersion = "25.05";
 
+  nixpkgs = {
+      config.allowUnfree = true;
+      overlays = [
+        inputs.nur.overlays.default
+      ];
+    };
+
   # Let home-manager manage itself
   programs.home-manager.enable = true;
 

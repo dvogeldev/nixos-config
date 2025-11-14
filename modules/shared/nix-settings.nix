@@ -29,6 +29,9 @@
       "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
     ];
 
+    # Increase buffer to avoid download saturation warnings.
+    download-buffer-size = 536870912;
+
     # Additional performance tweaks
     keep-outputs = true; # Keep build outputs for debugging
     keep-derivations = true; # Keep .drv files
