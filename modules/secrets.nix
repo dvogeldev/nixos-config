@@ -1,24 +1,24 @@
 { config, lib, ... }:
 {
   age.identityPaths = [
-    "/home/joshua/.config/age/keys.txt"
+    "/home/david/.config/age/keys.txt"
     "/etc/age/keys.txt"
   ];
 
   age.secrets = {
     canlock = {
       file = ../secrets/canlock.age;
-      owner = "joshua";
+      owner = "david";
       mode = "400";
     };
     gnus-name = {
       file = ../secrets/gnus-name.age;
-      owner = "joshua";
+      owner = "david";
       mode = "400";
     };
     gnus-email = {
       file = ../secrets/gnus-email.age;
-      owner = "joshua";
+      owner = "david";
       mode = "400";
     };
     miniflux-admin = {

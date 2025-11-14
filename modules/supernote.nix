@@ -4,7 +4,7 @@
 let
   cfg = config.services.supernote-watcher;
   supernote-tools = inputs.supernote-tools.packages.${pkgs.system}.default;
-  username = "joshua";
+  username = "david";
 in
 {
   options.services.supernote-watcher = {
@@ -14,7 +14,7 @@ in
   config = lib.mkIf cfg.enable {
     environment.systemPackages = [ supernote-tools ];
 
-    systemd.services.supernote-watcher-joshua = {
+    systemd.services.supernote-watcher-david = {
       description = "Supernote automatic PDF conversion for joshua";
       wantedBy = [ "multi-user.target" ];
       after = [ "network.target" ];

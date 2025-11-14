@@ -74,23 +74,11 @@
     {
       # System configurations
       nixosConfigurations = {
-        # Personal machines (desktop environment)
-        # theologica = mkHost "theologica" desktop;
-        # king = mkHost "king" desktop;
         dvpc = mkHost "dvpc" desktop;
-        # axios = mkHost "axios" desktop;
 
         # Server infrastructure (headless)
         # empirica = mkHost "empirica" base;
       };
-
-      # Remote deployment targets
-      # deploy.nodes = {
-      #   empirica = mkDeploy "empirica" {
-      #     sshUser = "joshua";
-      #     hostname = "192.168.0.28";
-      #   };
-      # };
 
       # Deployment validation checks
       checks = builtins.mapAttrs (_: deployLib: deployLib.deployChecks self.deploy) inputs.deploy-rs.lib;
